@@ -143,3 +143,10 @@ class Contact(models.Model):
     class Meta:
         verbose_name = "Контакт"
         verbose_name_plural = "Контакты"
+
+
+class YourModel(models.Model):
+    # Определение полей модели
+    field1 = models.CharField(max_length=100)
+    field2 = models.IntegerField()
+    field3 = models.DateTimeField(auto_now_add=True)
